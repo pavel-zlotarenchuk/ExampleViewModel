@@ -7,7 +7,7 @@ class MainViewModel : ViewModel() {
 
     var text = MutableLiveData<String>()
 
-    fun onClick(){
-        text.value = "This from ViewModel"
+    fun onClick() {
+        text.postValue("This from ViewModel")
     }
 }
